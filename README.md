@@ -27,7 +27,7 @@ The **Resume Job Role Classifier** is a mini project that predicts the job categ
 
 ---
 
-## Streamlit Application
+## Streamlit Application(`src/main.py`)
 
 - A user-friendly **Streamlit web application** is created.
 - Users can paste resume text into the input area.
@@ -86,7 +86,7 @@ pip install -r requirements.txt
 ```
 ### 4. Train the Model
 ```
-streamlit run src/main.py
+python src/logistic_regression.py
 ```
 
 ### 5. Run the Streamlit App
@@ -95,7 +95,7 @@ streamlit run src/main.py
 ```
 ### 6. Check outputs
 
-- Logs: logs/pipeline.log
+- Logs: logs/predictions.log
 
 
 
