@@ -41,26 +41,28 @@ The **Resume Job Role Classifier** is a mini project that predicts the job categ
 
 ## Project Structure 
 ```
-MINI_AI_PRODUCT_DEPLOYMENT/
+Mini_AI_Product_Deployment/
 │
 ├── data/
 │   ├── input/
-│   │   └── resume_dataset.csv
+│   │   └── resume_dataset.csv        # Resume dataset used for training
 │   │
 │   └── output/
-│       ├── model.pkl
-│       └── tfidf.pkl
+│       ├── model.pkl                 # Trained Logistic Regression model
+│       └── tfidf.pkl                 # Saved TF-IDF vectorizer
 │
 ├── logs/
-│   └── predictions.log
+│   └── predictions.log               # Logs for predictions and validation errors
 │
 ├── src/
-│   ├── logistic_regression.py
-│   └── main.py
+│   ├── __init__.py                   # Marks src as a Python package
+│   ├── logistic_regression.py        # Model training and saving script
+│   └── main.py                       # Prediction Pipeline and Streamlit app
 │
-└── README.md
-
+├── README.md                         # Project documentation
+└── requirements.txt                  # Required Python libraries
 ```
+
 ## How to Run 
 ### 1. Clone the repository
 ```
